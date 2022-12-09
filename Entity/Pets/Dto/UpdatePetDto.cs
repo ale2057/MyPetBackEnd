@@ -21,7 +21,7 @@ namespace MyPetBackEnd.Entity.Pets.Dto
         public string Family { get; set; }
 
         [Required]
-        public float Size { get; set; }
+        public string Size { get; set; }
 
         [Required]
         public string Personality { get; set; }

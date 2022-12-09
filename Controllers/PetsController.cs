@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using MyPetBackEnd.Entity.Pets;
 using MyPetBackEnd.Entity.Pets.Dto;
 using MyPetBackEnd.Services;
@@ -9,6 +10,7 @@ namespace MyPetBackEnd.Controllers
     [Route("api/pet")]
     public class PetsController : ControllerBase
     {
+        [EnableCors]
         [HttpGet]
         [Route("allPets")]
         public async Task<ActionResult<List<Pets>>> GetPets()

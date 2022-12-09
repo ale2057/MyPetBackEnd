@@ -27,7 +27,7 @@ namespace MyPetBackEnd.Services
                             entityPets.Breed = (string)item["Breed"];
                             entityPets.Gender = (string)item["Gender"];
                             entityPets.Family = (string)item["Family"];
-                            entityPets.Size = (float)item["Size"];
+                            entityPets.Size = (string)item["Size"];
                             entityPets.Personality = (string)item["Personality"];
                             entityPets.Health = (string)item["Health"];
                             entityPets.Story = (string)item["Story"];
@@ -60,7 +60,7 @@ namespace MyPetBackEnd.Services
                             entityPets.Breed = (string)item["Breed"];
                             entityPets.Gender = (string)item["Gender"];
                             entityPets.Family = (string)item["Family"];
-                            entityPets.Size = (float)item["Size"];
+                            entityPets.Size = (string)item["Size"];
                             entityPets.Personality = (string)item["Personality"];
                             entityPets.Health = (string)item["Health"];
                             entityPets.Story = (string)item["Story"];
