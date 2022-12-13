@@ -8,6 +8,7 @@ namespace MyPetBackEnd.Services
     public class ServicePets
     {
         ConnectionDB cn = new ConnectionDB();
+        ServicePhotos servicePhoto = new ServicePhotos();
 
         public async Task<List<Pets>> GetPets()
         {
@@ -142,6 +143,7 @@ namespace MyPetBackEnd.Services
                     cmd.Parameters.AddWithValue("@PetId", id);
                     await sqlCon.OpenAsync();
                     await cmd.ExecuteNonQueryAsync();
+                    await servicePhoto.DeletePhoto(id);
                 }
             }
         }
